@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Dimpal</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+<style>body{font-family:Poppins;background:#fdf6f0}.hand{font-family:'Dancing Script',cursive}.page{display:none;min-height:100vh}.page.active{display:flex}</style>
+</head><body>
+<div id="p1" class="page active flex-col items-center justify-center p-6 text-center">
+<h1 class="hand text-5xl">Hello Dimpal<br><span class="text-pink-400 text-2xl">happy birthday ♡</span></h1>
+<video autoplay loop muted playsinline class="w-[200px] h-[200px] mx-auto mt-4 rounded-2xl"><source src="cat.mp4" type="video/mp4"></video>
+<div onclick="go(2)" class="mt-6 w-[300px] h-[120px] bg-white rounded-2xl shadow flex items-center justify-center border-2 border-pink-200"><p class="hand text-xl">For My Dear Dimpal ♡ - TAP</p></div>
+</div>
+<div id="p2" class="page flex-col items-center justify-center p-6"><div class="bg-white rounded-[30px] p-6 shadow-xl max-w-[350px] w-full text-center">
+<h1 class="hand text-3xl">Our Album ♡</h1>
+<img src="photo 1.jpg" class="mt-4 rounded-2xl w-full h-[300px] object-cover">
+<img src="photo 2.jpg" class="mt-4 rounded-2xl w-full h-[300px] object-cover">
+<h2 class="hand text-2xl mt-6">happy birthday Dimpal ♡<br><span class="text-sm font-sans">- Your Best Friend</span></h2>
+<button onclick="go(1)" class="mt-4 bg-pink-400 text-white px-6 py-2 rounded-full">Back ♡</button>
+</div></div>
+<script>function go(n){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('p'+n).classList.add('active')}</script>
+</body></html>
